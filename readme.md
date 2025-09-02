@@ -13,21 +13,24 @@
 
 ## 📂 Estrutura do Projeto
 
-assets/
-    ├── css/
-        └── style.css
-    └── js/
-        └── main.js
-contato.html
-faq.html
-index.html
-LICENSE
-logistica.html
-privacidade.html
-produtos.html
-readme.md
-sobre.html
-termos.html
+```
+📦 nutriagro
+├─ LICENSE
+├─ assets
+│  ├─ css
+│  │  └─ style.css
+│  └─ js
+│     └─ main.js
+├─ contato.html
+├─ faq.html
+├─ index.html
+├─ logistica.html
+├─ privacidade.html
+├─ produtos.html
+├─ readme.md
+├─ sobre.html
+└─ termos.html
+```
 ---
 
 ## 🛠️ Tecnologias Utilizadas
