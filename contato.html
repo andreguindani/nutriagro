@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - AgriNutri | Solicite sua Cotação</title>
+    <meta name="description" content="Entre em contato com a AgriNutri. Solicite cotações, tire dúvidas técnicas e conheça nossas soluções em nutrição animal. Atendimento especializado.">
+    <link rel="canonical" href="https://agrinutri.com.br/contato.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contato - AgriNutri">
+    <meta property="og:description" content="Entre em contato e solicite sua cotação">
+    <meta property="og:image" content="/assets/img/og.jpg">
+    <meta property="og:url" content="https://agrinutri.com.br/contato.html">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" aria-label="AgriNutri - Página inicial">AgriNutri</a>
+                </div>
+                
+                <nav class="nav" role="navigation" aria-label="Navegação principal">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                    <a href="logistica.html" class="nav-link">Logística</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+                        ☰
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <nav class="mobile-nav" role="navigation" aria-label="Navegação mobile">
+                    <a href="index.html" class="mobile-nav-link">Início</a>
+                    <a href="sobre.html" class="mobile-nav-link">Sobre</a>
+                    <a href="produtos.html" class="mobile-nav-link">Produtos</a>
+                    <a href="logistica.html" class="mobile-nav-link">Logística</a>
+                    <a href="faq.html" class="mobile-nav-link">FAQ</a>
+                    <a href="contato.html" class="mobile-nav-link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Navegação estrutural">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li>
+                <li class="breadcrumb-item">Contato</li>
+            </ol>
+        </div>
+    </nav>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center mb-8">
+                    <h1>Entre em Contato</h1>
+                    <p style="font-size: 1.125rem; color: var(--color-gray);">
+                        Nossa equipe técnica está pronta para atender suas necessidades em nutrição animal
+                    </p>
+                </div>
+
+                <div class="grid grid-2" style="gap: 4rem;">
+                    <!-- Formulário de Contato -->
+                    <div class="card">
+                        <h2>Solicite sua Cotação</h2>
+                        <form class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="nome" class="form-label">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-mail *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone" class="form-label">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="empresa" class="form-label">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="especie" class="form-label">Espécie de Interesse *</label>
+                                <select id="especie" name="especie" class="form-select" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="ruminantes">Ruminantes</option>
+                                    <option value="aves">Aves</option>
+                                    <option value="suinos">Suínos</option>
+                                    <option value="pets">Pets</option>
+                                    <option value="aquicultura">Aquicultura</option>
+                                    <option value="multiplas">Múltiplas Espécies</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem" class="form-label">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Descreva suas necessidades, volume mensal estimado e outras informações relevantes..." required></textarea>
+                            </div>
+
+                            <!-- Produtos na Cotação -->
+                            <div id="quote-items" class="form-group" style="display: none;">
+                                <label class="form-label">Produtos Selecionados para Cotação:</label>
+                                <div id="quote-list" class="card" style="background-color: var(--color-light-gray); padding: 1rem;">
+                                    <!-- Items will be populated by JavaScript -->
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                Enviar Mensagem
+                            </button>
+
+                            <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 1rem; text-align: center;">
+                                * Campos obrigatórios. Ao enviar, você concorda com nossa Política de Privacidade.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Informações de Contato -->
+                    <div>
+                        <div class="card mb-4">
+                            <h3>Informações de Contato</h3>
+                            <div style="margin-top: 1.5rem;">
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📍 Endereço</h4>
+                                    <p>Rodovia BR-050, Km 145<br>
+                                    Uberlândia - MG, 38400-000</p>
+                                </div>
+
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📞 Telefones</h4>
+                                    <p>Comercial: (34) 3000-1234<br>
+                                    Técnico: (34) 3000-1235<br>
+                                    WhatsApp: (34) 99999-9999</p>
+                                </div>
+
+                                <div style="margin-bottom: 1.5rem;">
+                                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📧 E-mails</h4>
+                                    <p>Comercial: comercial@agrinutri.com.br<br>
+                                    Técnico: tecnico@agrinutri.com.br<br>
+                                    Geral: contato@agrinutri.com.br</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">🕒 Horário de Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h às 18h<br>
+                                    Sábado: 8h às 12h<br>
+                                    Plantão técnico 24h</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Localização</h3>
+                            <div style="margin-top: 1rem;">
+                                <img src="/placeholder.svg?height=250&width=400" 
+                                     alt="Mapa de localização da AgriNutri" 
+                                     class="img-lazy" 
+                                     data-src="/placeholder.svg?height=250&width=400"
+                                     style="border-radius: var(--border-radius); width: 100%;">
+                                <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--color-gray);">
+                                    Localização estratégica no Triângulo Mineiro, com fácil acesso às principais rodovias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe Regional -->
+        <section class="section" style="background-color: var(--color-light-gray);">
+            <div class="container">
+                <h2 class="text-center mb-8">Equipe Comercial Regional</h2>
+                <div class="grid grid-3">
+                    <div class="card text-center">
+                        <h4>Região Sudeste</h4>
+                        <p><strong>João Silva</strong><br>
+                        Gerente Comercial<br>
+                        📞 (11) 99999-1111<br>
+                        📧 joao.silva@agrinutri.com.br</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <h4>Região Centro-Oeste</h4>
+                        <p><strong>Maria Santos</strong><br>
+                        Gerente Comercial<br>
+                        📞 (65) 99999-2222<br>
+                        📧 maria.santos@agrinutri.com.br</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <h4>Região Sul</h4>
+                        <p><strong>Carlos Oliveira</strong><br>
+                        Gerente Comercial<br>
+                        📞 (51) 99999-3333<br>
+                        📧 carlos.oliveira@agrinutri.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AgriNutri</h3>
+                    <p>Excelência em nutrição animal desde 1995. Comprometidos com a qualidade, sustentabilidade e inovação.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="#" aria-label="Facebook" style="margin-right: 1rem; font-size: 1.5rem;">📘</a>
+                        <a href="#" aria-label="Instagram" style="margin-right: 1rem; font-size: 1.5rem;">📷</a>
+                        <a href="#" aria-label="LinkedIn" style="margin-right: 1rem; font-size: 1.5rem;">💼</a>
+                        <a href="#" aria-label="YouTube" style="font-size: 1.5rem;">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📍 Rodovia BR-050, Km 145<br>Uberlândia - MG, 38400-000</p>
+                    <p>📞 (34) 3000-1234<br>📧 contato@agrinutri.com.br</p>
+                    <p><strong>Horário:</strong><br>Seg-Sex: 8h às 18h</p>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AgriNutri. Todos os direitos reservados. | 
+                   <a href="privacidade.html">Política de Privacidade</a> | 
+                   <a href="termos.html">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://agrinutri.com.br/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contato",
+                "item": "https://agrinutri.com.br/contato.html"
+            }
+        ]
+    }
+    </script>
+
+    <script src="assets/js/main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quoteCart = JSON.parse(localStorage.getItem('quoteCart')) || [];
+            const quoteItemsSection = document.getElementById('quote-items');
+            const quoteList = document.getElementById('quote-list');
+            const messageTextarea = document.getElementById('mensagem');
+
+            if (quoteCart.length > 0) {
+                quoteItemsSection.style.display = 'block';
+                
+                let itemsHtml = '<h4>Produtos selecionados:</h4><ul>';
+                let messageText = 'Gostaria de receber cotação para os seguintes produtos:\n\n';
+                
+                quoteCart.forEach(item => {
+                    itemsHtml += `<li>${item.name} (${item.species})</li>`;
+                    messageText += `- ${item.name} (${item.species})\n`;
+                });
+                
+                itemsHtml += '</ul>';
+                messageText += '\nPor favor, enviem informações sobre preços, disponibilidade e condições de entrega.';
+                
+                quoteList.innerHTML = itemsHtml;
+                
+                // Pre-fill message if empty
+                if (!messageTextarea.value.trim()) {
+                    messageTextarea.value = messageText;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
