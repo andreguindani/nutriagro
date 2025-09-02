@@ -1,7 +1,6 @@
 # AgriNutri
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Status](https://img.shields.io/badge/status-online-success)
 ![HTML](https://img.shields.io/badge/HTML5-Ready-orange)
 ![CSS](https://img.shields.io/badge/CSS3-Ready-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Ready-yellow)
@@ -14,21 +13,21 @@
 
 ## 📂 Estrutura do Projeto
 
-/
-├── index.html # Página inicial
-├── sobre.html # Página "Sobre"
-├── produtos.html # Lista de produtos
-├── logistica.html # Página de logística
-├── faq.html # Perguntas frequentes
-├── contato.html # Página de contato
-├── privacidade.html # Política de privacidade
-├── termos.html # Termos de uso
-└── assets/
-├── css/style.css # Estilos principais
-├── js/main.js # Scripts e interatividade
-└── img/ # Imagens e ícones
-
-
+assets/
+    ├── css/
+        └── style.css
+    └── js/
+        └── main.js
+contato.html
+faq.html
+index.html
+LICENSE
+logistica.html
+privacidade.html
+produtos.html
+readme.md
+sobre.html
+termos.html
 ---
 
 ## 🛠️ Tecnologias Utilizadas
