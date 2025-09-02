@@ -37,9 +37,6 @@
 
 - **HTML5** e **CSS3** para estrutura e estilização responsiva  
 - **JavaScript (ES6)** para interatividade  
-- **SEO Avançado**: Metatags, Open Graph, Twitter Cards, JSON-LD  
-- **Acessibilidade**: Navegação por teclado, skip links, ARIA  
-- **Favicon e Manifest**: Preparado para PWA básico  
 
 ---
 
@@ -48,9 +45,7 @@
 - Catálogo de produtos para diversas espécies (ruminantes, aves, suínos, pets e aquicultura)  
 - Seções institucionais: sobre, logística, certificações  
 - Contato com telefone, e-mail e endereço  
-- Integração com redes sociais  
-- Banner de cookies e política de privacidade  
-- Estrutura otimizada para SEO  
+- Integração com redes sociais   
 
 ---
 
