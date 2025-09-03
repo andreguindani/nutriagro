@@ -54,7 +54,7 @@
 1. Clone o repositório:
    ```bash
    git clone https://github.com/andreguindani/nutriagro.git
-cd nutriagro
+   cd nutriagro
 Abra o arquivo index.html em um navegador.
 
 O projeto é estático e não precisa de servidor ou banco de dados.
